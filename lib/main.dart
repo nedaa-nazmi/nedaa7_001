@@ -38,7 +38,7 @@ class _pianoState extends State<piano> {
   }
 
   String _value = 'assets/Piano.sf2';
-  String _value1 = 'assets/Best of Guitars-4U-v1.0.sf2';
+  String _value2 = 'assets/Best of Guitars-4U-v1.0.sf2';
   // String _value2 = 'assets/Piano.sf2';
 
   @override
@@ -51,7 +51,7 @@ class _pianoState extends State<piano> {
           IconButton(
             icon: Icon(Icons.published_with_changes_outlined),
             onPressed: () {
-              load(_value1);
+              load(_value2);
               print("0000");
             },
           )
