@@ -38,6 +38,8 @@ class _pianoState extends State<piano> {
   }
 
   String _value = 'assets/Piano.sf2';
+  String _value1 = 'assets/Best of Guitars-4U-v1.0.sf2';
+  // String _value2 = 'assets/Piano.sf2';
 
   @override
   Widget build(BuildContext context) {
@@ -45,15 +47,15 @@ class _pianoState extends State<piano> {
       appBar: AppBar(
         title: Text('Piano Demo'),
         backgroundColor: Colors.black12,
-        // actions: [
-        //   IconButton(
-        //     icon: Icon(Icons.published_with_changes_outlined),
-        //     onPressed: () {
-        //       load("assets/Piano_1.sf2");
-        //       print("0000");
-        //     },
-        //   )
-        // ],
+        actions: [
+          IconButton(
+            icon: Icon(Icons.published_with_changes_outlined),
+            onPressed: () {
+              load(_value1);
+              print("0000");
+            },
+          )
+        ],
       ),
       body: InteractivePiano(
         highlightedNotes: [NotePosition(note: Note.C, octave: 3)],
